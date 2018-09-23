@@ -17,7 +17,8 @@ then :ref:`Let's Encrypt <letsencrypt>` is probably the right path for you.
 Automatic HTTPS with Let's Encrypt
 ==================================
 
-To enable HTTPS via letsencrypt::
+HTTPS can be enabled via letsencrypt. The following commands can either be entered in the 
+terminal, or in a terminal initialized within the JupyterHub ::
 
     sudo tljh-config set https.enabled true
     sudo tljh-config set https.letsencrypt.email you@example.com
@@ -44,7 +45,8 @@ Finally, you can reload the proxy to load the new configuration::
     sudo tljh-config reload proxy
 
 At this point, the proxy should negotiate with Let's Encrypt to set up a trusted HTTPS certificate for you.
-It may take a moment for the proxy to negotiate with Let's Encrypt to get your certificates, after which you can access your Hub securely at https://yourhub.yourdomain.edu.
+It may take a moment for the proxy to negotiate with Let's Encrypt to get your certificates, after which you 
+can access your Hub securely at https://yourhub.yourdomain.edu. 
 
 .. _manual_https:
 
